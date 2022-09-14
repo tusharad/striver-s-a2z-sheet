@@ -2,12 +2,10 @@
 #include<stdio.h>
 
 int leftRotate(int arr[],int n){
-	int temp[n];
-	for(int i = 0;i < n;i++)
-		temp[i] = arr[i];
+	int temp = arr[0];
 	for(int i = 0;i < n-1;i++)
-		arr[i] = temp[i+1];
-	arr[n-1] = temp[0];
+		arr[i] = arr[i+1];
+	arr[n-1] = temp;
 }
 
 void printArray(int arr[],int n){
