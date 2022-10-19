@@ -16,6 +16,7 @@ int partition(int arr[],int start,int end){
 			pivot_index++;
 		}
 	}
+
 	swap(arr,pivot_index,end);
 	return pivot_index;
 }
